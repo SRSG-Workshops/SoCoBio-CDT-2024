@@ -18,7 +18,7 @@ logo_site: "https://rsgsoton.net"
 
 # For static delivery this section can all be ignored ==================================================================
 # Specify the location of the workshop
-venue: "TBC"           # name of location use "online" if online
+venue: "online"           # name of location use "online" if online
 address: "TBC"         # address of location or url of platform
 platform-name: "TBC"   # name of online platform e.g. Teams, Zoom e.t.c
 country: "TBC"         # e.g. gb
@@ -27,7 +27,7 @@ latitude: "50.909698"    # latitude of location (Soton: 50.909698)
 longitude: "-1.404351"   # longitude of location (Soton: -1.404351)
 
 # Specify the start and end date of the workshop
-humandate: "TBC"      # e.g. "6th August"
+humandate: "18th - 22nd November 2024"      # e.g. "6th August"
 humantime: "TBC"      # e.g. "09:00-17:00"
 startdate: "1990-01-01"        # e.g. YYYY-MM-DD # This is required for the surveys NOTE: 1990-1-1 will not work
 enddate: "TBC"          # e.g. YYYY-MM-DD
