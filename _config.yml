@@ -9,8 +9,8 @@ delivery: "static"
 # Overall title for the Workshop.
 # This variable is used to (optionally) add a title in the "jumbotron"
 # (the grey box at the top of the page), and to the extra pages.
-title: "TBC Workshop Title"
-form_title: "TBC+Workshop+Title" # This is required for the surveys
+title: "SoCoBio Computational Research Skills"
+form_title: "SoCoBio+Computational+Research+Skills" # This is required for the surveys
 
 # Email address, no mailto:
 email: "rsginfo@soton.ac.uk"
@@ -45,10 +45,6 @@ helper:
   - "Helper 2"
 # ======================================================================================================================
 
-# See https://github.com/Southampton-RSG-Training/setup-documents for setup instructions.
-setup_docs:
-  - remote_desktop.md
-
 # Details about the lessons
 lessons:
   - title: Best Practices in Data Organisation Using Spreadsheets
@@ -65,12 +61,12 @@ lessons:
     start-time: 15:00
     order: 2
 
-  - title: Managing Academic Software Development
-    gh-name: project-novice
-    branch: main
-    date: 10 January 2022
-    start-time: 9:30 am
-    order: 3
+  # - title: Managing Academic Software Development
+  #   gh-name: project-novice
+  #   branch: main
+  #   date: 10 January 2022
+  #   start-time: 9:30 am
+  #   order: 3
 
   - title: Automating Tasks with the Unix Shell  # Lesson title
     org-name: Southampton-RSG-Training           # Name of the GitHub organisation (or individual) the lesson is in defaults to Southampton-RSG-Training
@@ -78,25 +74,25 @@ lessons:
     branch: main                                 # Set the branch of the repository to use, useful for lesson customization
     date: 8 January 2022                         # The date of the lesson                   # date and start-time are required for z
     start-time: 10:30 am                         # The start time of the lesson             # 'kind: workshop'
-    order: 4                                     # The position of the lesson in the course # order is required for 'delivery: static'
+    order: 3                                     # The position of the lesson in the course # order is required for 'delivery: static'
 
   - title: Version Control with git
     gh-name: git-novice
     branch: main
     date: 9 January 2022
     start-time: 8:30 am
-    order: 5
+    order: 4
 
-  - title: Building Programs with Python
-    gh-name: python-novice
-    branch: main
-    date:
-      - 11 January 2022
-      - 12 January 2022
-    start-time:
-      - 10:00 am
-      - 10:00 am
-    order: 6
+  # - title: Building Programs with Python
+  #   gh-name: python-novice
+  #   branch: main
+  #   date:
+  #     - 11 January 2022
+  #     - 12 January 2022
+  #   start-time:
+  #     - 10:00 am
+  #     - 10:00 am
+  #   order: 6
 
   - title: Data Analysis and Visualization in R
     gh-name: r-novice
@@ -110,7 +106,7 @@ lessons:
       - 09:30
       - 09:30
       - 09:30
-    order: 7
+    order: 5
 
 ###
 # It is unlikely you need to modify the values below this line

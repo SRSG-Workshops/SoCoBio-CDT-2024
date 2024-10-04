@@ -1,47 +1,6 @@
 ---
-title: Setup for TBC Workshop Title
+title: Setup for SoCoBio Computational Research Skills
 ---
-
-
-## Remote Desktop Client 
-
-In this workshop we will be using remote desktops that come pre-configured with all the
-resources you will need to complete the course. Prior to that you will need to download
-the windows remote desktop client suitable for your operating system.
-
-Link to Microsoft's website, please use the table to pick the link to the app appropriate to your system:
-Note: For Windows users this is the microsoft store.
-
-[Remote Desktop Clients](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients)
-
-The remote desktop will be available to you for the time allocated to your workshop 
-and potentially include some 'out of hours' time.
-
-During the course we will have time dedicated to helping you install the software on 
-your own computer so afterwards you can continue to use the skills you have learnt.
-
-### Connecting to your remote desktop
-
-1. Login to Microsoft Teams using your University account. 
-2. Navigate to the team (Request to join the team if you are not already a member).
-3. Register for the lab using the provided link, the registration link will be emailed and in the teams channel, register with the same account you use for Teams. You cannot proceed until you have registered.
-4. Open the Azure Lab Services tab. The labs will start and stop automatically, don't worry if it is currently stopped.
-![Azure Lab Tab](fig/setup-lab-tab.png)
-6. You need to copy your RDP information click the three dots in the lower right corner.
-![RDP Info](fig/setup-rdp-info.png)
-7. You will be prompted to copy the remote desktop information copy it to your clipboard.
-8. Open your remote desktop app that we installed earlier.
-9. Click on the + and select Add PC, paste in the RDP information. (Green highlights)
-![Add PC to RD client](fig/setup-add-RDP-to-client.png)
-10. Optionally add the user account to the PC. The username is 'lab-user' the password is 'Qwerty2000'
-
-Note: the Virtual computers will automatically start before the workshop and stop at the end. 
-If you are inactive for more than 15 minutes, they will also switch off. They can be re-started from the Lab Services Tab
-but this can take up to 5 minutes, and you may need to ask the instructor. Outside the sessions if you have been
-allocated additional time you may log in to your session and continue working.
-
-<hline/>
-## The instructions to install the software on your own computer are provided below.
 
 
 # Best Practices in Data Organisation Using Spreadsheets
@@ -154,34 +113,6 @@ Alternatively, there are IDE's (integrated developer environments) that have
 more features specifically for coding such as VS Code; there are also IDEs
 specific to languages will be listed in the appropriate section(s) below.
 
-# Managing Academic Software Development
-
-## GitHub ##
-We'll be using the website [GitHub](https://github.com/) to host, back up, and distribute our code. You'll need to [create an account there](https://github.com/signup). As your GitHub username will appear in the URLs of your projects there, it's best to use a short, clear version of your name if you can.
-
-
-## Project Demo Repository
-
-We'll be showing you how to manage an example academic software project. 
-If you've completed our **Version Control with git** workshop, you'll have a finished version of our `climate-analysis` repository ([you'll have used the template from here](https://github.com/Southampton-RSG-Training/git-novice-template/))
-If not, please [create a copy of it from this template (linked here)](https://github.com/Southampton-RSG-Training/project-novice-template/generate), and name it `climate-analysis`.
-
-
-## Install Visual Studio Code
-
-This workshop involves editing code files. 
-Whilst you can use any text editor to do this, some code editors or Integrated Development Environments (IDEs) have features designed to make coding easier.
-If you're already using a code editor or IDE (e.g. [Atom](https://atom.io/), [Sublime Text](https://www.sublimetext.com/) or [Spyder](https://www.spyder-ide.org/)), 
-stick with what you're comfortable with. If not, we'd recommend installing [Visual Studio Code (link here)](https://code.visualstudio.com/).
-
-### Windows / MacOS
-Go to [the Visual Studio Code website](https://code.visualstudio.com/), and download and run the installer.
-
-### Linux
-If you're on **Ubuntu**, Visual Studio Code should be available through the software centre! 
-If not, [follow the detailed instructions here](https://code.visualstudio.com/docs/setup/linux) to install it.
-
-
 # The Bash Shell
 
 ## Open a Terminal ##
@@ -233,6 +164,10 @@ If it's not installed, you can install it by running `sudo apt-get install git` 
 your distribution.
 
 
+## GitHub ##
+We'll be using the website [GitHub](https://github.com/) to host, back up, and distribute our code. You'll need to [create an account there](https://github.com/signup). As your GitHub username will appear in the URLs of your projects there, it's best to use a short, clear version of your name if you can.
+
+
 ## Download Data for Shell Lesson ##
 
 Open a terminal and type the following into the prompt that appears (pressing enter/return after each line):
@@ -251,105 +186,6 @@ Please let the instructors know if you run into any problems.
 {% include links.md %}
 
 # Version Control with Git
-
-# Building Programs with Python
-
-## Python Setup ##
-
-The “Anaconda3” package provides everything Python-related you will need for the workshop. 
-To install [Anaconda](https://www.anaconda.com/products/individual), follow the instructions below.
-
-Some old research projects may be in Python 2 but Python 2 has been retired and new projects should be in Python 3.
-
-### Windows
-Download the latest Anaconda Windows installer. Double-click the installer and follow the instructions. **When asked “Add Anaconda to my PATH environment variable”, answer “yes”. It will warn you not to, but it's required for it to be found by git bash** After it’s finished, close and reopen any open terminals to reload the updated PATH and allow the installed Python to be found.
-
-Once the Anaconda installation is finished you will be asked if you want the installer to initialize Anaconda3 by
-running conda init? You should select yes. Alternatively/additionally you will need to run the following command in 
-GitBash
-
-{: .bash}
-~~~
-conda init bash
-~~~
-
-Then close and reopen GitBash.
-
-Please test the python install open GitBash (or your favorite terminal) and run the following command to verify that the installation was successful.
-
-{: .bash}
-~~~
-cd ~
-python
-~~~
-
-You can then type the following to exit:
-{: .python}
-~~~
-quit()
-~~~
-
-{: .callout}
-~~~
-In some cases GitBash will hang on this command and not launch the Python interpreter. 
-In this case close and reopen git bash and issue the following commands:
-~~~
-
-{: .bash}
-~~~
-cd ~
-echo 'alias python="winpty python.exe"' >> ~/.bash_profile
-source .bash_profile
-python
-~~~
-
-Note that for older versions of git bash you will need to use `.bashrc` rather than `.bash_profile`
-
-
-### Mac OS X
-
-#### Mac OS Intel
-Download the latest Anaconda Mac OS X installer. Double-click the .pkg file and follow the instructions.
-
-#### Mac OS M1
-If you have a M1 Mac you need a specific version of Anaconda follow the link below. 
-
-[M1 Compatible Anaconda](https://repo.anaconda.com/archive/Anaconda3-2022.05-MacOSX-arm64.pkg)
-
-Once the Anaconda installation is finished you will be asked if you want the installer to initialize Anaconda3 by
-running conda init? You should select yes.
-
-### Linux
-Download the latest Anaconda Linux Installer.
-
-Install via the terminal like this (you will need to change the version number to the latest version):
-
-First move to the folder where you downloaded the installer, this is likely to be the Downloads folder e.g.
-
-~~~
-$ cd ~/Downloads
-~~~
-{: .language-bash}
-
-~~~
-$ bash Anaconda3-2021.11-Linux-x86_64.sh
-~~~
-{: .language-bash}
-
-Answer ‘yes’ to allow the installer to initialize Anaconda3 in your .bashrc.
-
-## Download Data for Python Lesson ##
-
-Now we are ready to download the code that we need for this lesson. Open a terminal on your machine, and enter:
-~~~
-$ cd
-$ git clone https://github.com/Southampton-RSG-Training/python-novice
-~~~
-{: .language-bash}
-
-`cd` will move to your home directory, and `git clone` will download a copy of the materials.
-
-{% include links.md %}
 
 # Introductory Data Management with R
 
